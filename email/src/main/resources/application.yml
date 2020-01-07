@@ -1,0 +1,15 @@
+server:
+  port: 8080
+
+## ” œ‰≈‰÷√
+spring:
+  mail:
+    host: smtp.tiza.com.cn
+    port: 25
+    username: xiaoyong@tiza.com.cn
+    password: xy112233.
+
+
+application:
+  mail:
+    from: xiaoyong@tiza.com.cn
