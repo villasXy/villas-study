@@ -1,0 +1,24 @@
+server:
+  port: 8080
+
+spring:
+  cloud:
+    gateway:
+      locator:
+        enabled: true
+      routes:
+      # =====================================
+      - id: server
+        uri: lb://server
+        predicates:
+          - Path=/api/server/**
+        filters:
+          - StripPrefix=2
+      - id: client
+        uri: lb://client
+        predicates:
+          - Path=/api/client/**
+        filters:
+          - StripPrefix=2
+
+

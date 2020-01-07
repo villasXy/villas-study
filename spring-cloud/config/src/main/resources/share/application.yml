@@ -1,0 +1,8 @@
+swagger:
+  enabled: true
+  base-package: com.villas.controller
+  title: villas
+  version: 1.0.0-SNAPSHOT
+
+
+
